@@ -11,4 +11,16 @@ void main(List<String> args) {
       '$altura metros de altura';
 
   print(frase);
+
+  List<String> listanomes = [
+    'Guilherme',
+    'Nina',
+    'Saori',
+    'Luiza',
+    'Sophie',
+    'Bento',
+    'Pancakes'
+  ];
+
+  print(listanomes[0]);
 }

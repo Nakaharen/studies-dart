@@ -4,11 +4,22 @@ void main(List<String> args) {
   bool isDev = true;
   String nome = 'Karen Nakahara';
   String apelido = 'Naka';
-  String frase = 'Meu nome é $nome \n'
-      'mas meu apelido é $apelido \n'
-      'sou desenvolvedora? $isDev \n'
-      'tenho $idade anos de idade e \n'
-      '$altura metros de altura';
+  bool isOfLegalAge;
+
+  if (idade >= 18) {
+    isOfLegalAge = true;
+  } else {
+    isOfLegalAge = false;
+  }
+
+  List<dynamic> karen = [idade, altura, isDev, nome, apelido];
+
+  String frase = 'Meu nome é ${karen[3]} \n'
+      'mas meu apelido é ${karen[4]} \n'
+      'sou desenvolvedora? ${karen[2]} \n'
+      'tenho ${karen[0]} anos de idade e \n'
+      '${karen[1]} metros de altura. \n'
+      'Sou maior de idade? $isOfLegalAge';
 
   print(frase);
 

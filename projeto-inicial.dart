@@ -34,4 +34,8 @@ void main(List<String> args) {
   ];
 
   print(listanomes[0]);
+
+  for (int i = 1; i < 10; i++) {
+    print('Conclui $i voltas');
+  }
 }
